@@ -47,11 +47,10 @@ if __name__ == '__main__':
         width = int(sys.argv[2])
     elif len(sys.argv) < 2:
         width = height
-
     area = area_of_rectangle(height, width)
-
-    message = "The area of a {h} X w rectangle is {a}".format(
+    message = "The area of a {h} X {w} rectangle is {a}".format(
             h = height,
-#            w = width,
+            w = width,
             a = area)
     print(message)
+
